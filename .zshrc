@@ -22,7 +22,7 @@ update_path () {
       echo "~"
     else
       PATH=$(echo "$PWD" | sed -e 's|'"$HOME"'||g')
-      # TODO: Add more special characters to match the path correct ([-+_.]+ === /my-project/test).
+      # TODO: Add more special characters to match the path correct ([-+_.]+ === /my-project/my+test/...).
       REGEX='^(\/[-+_.a-zA-Z0-9]+\/[-+_.a-zA-Z0-9]+)(.*)(\/[-+_.a-zA-Z0-9]+\/[-+_.a-zA-Z0-9]+)$'
 
       if [[ $PATH =~ $REGEX ]]; then
