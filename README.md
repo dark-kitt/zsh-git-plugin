@@ -1,9 +1,16 @@
 # ZSH Git Plugin
-ZSH Git integration (Plugin), to display branches and working paths.
+ZSH Git integration, to display the current working directory and the current working branch.
 
-Use **[alt + p]** to display the whole working path
+Use **[alt + p]** to display the whole working path.
 
-Just copy and paste the snippet inside your *`.zshrc`* file. This should be located in your **`$HOME`** directory.
+## Install
+
+Just copy and paste the snippet in your **`.zshrc`** file. This should be located in your **`$HOME`** directory.
+
+Or clone this repository in your zsh plugin directory (e.g. **`$HOME/.zsh`**). Afterwards, you can add the following line to your **`.zshrc`** file.
+```shell
+source $HOME/.zsh/zsh-git-plugin.plugin.zsh
+```
 
 ---
 
